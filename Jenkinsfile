@@ -55,7 +55,7 @@ pipeline {
         }
 
 /*	  stage('push-to-artifactory') {
-          agent { label "naster" }
+          agent { label "master" }
 			steps {
                 script {
 				   server.upload(uploadSpec)
