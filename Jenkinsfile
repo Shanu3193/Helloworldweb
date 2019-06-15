@@ -50,7 +50,7 @@ pipeline {
       stage('Build') {
           agent { label "master" }
 			steps {
-                bat 'mvn package'
+                bat 'mvn clean package'
             }
         }
 
