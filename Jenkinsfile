@@ -35,10 +35,11 @@ pipeline {
       stage('SCM_Chekout') {
           agent { label "master" }
 			steps {
-			    script {
+/*			    script {
 					notify('build-started')
 				}
-                checkout([$class: 'GitSCM',
+ */
+	       checkout([$class: 'GitSCM',
                     branches: [[name: '*/master']],
                     doGenerateSubmoduleConfigurations: false,
                     extensions: [],
