@@ -47,14 +47,14 @@ pipeline {
                     userRemoteConfigs: [[url: 'https://github.com/Shanu3193/Helloworldweb.git']]])
             }
         }
-/*      stage('Build'){
+      stage('Build') {
           agent { label "master" }
 			steps {
                 sh 'mvn -f pom.xml clean package'
             }
         }
 
-	  stage('push-to-artifactory') {
+/*	  stage('push-to-artifactory') {
           agent { label "naster" }
 			steps {
                 script {
